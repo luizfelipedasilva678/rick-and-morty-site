@@ -1,0 +1,23 @@
+{
+  "name": "rick-and-morty-site",
+  "version": "1.0.0",
+  "description": "Rick and Morty site made with JavaScript, Html and Css using https://rickandmortyapi.com/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luizfelipedasilva678/rick-and-morty-site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luizfelipedasilva678/rick-and-morty-site/issues"
+  },
+  "homepage": "https://github.com/luizfelipedasilva678/rick-and-morty-site#readme",
+  "dependencies": {
+    "sass": "^1.32.5"
+  }
+}
