@@ -4,7 +4,8 @@
   "description": "Rick and Morty site made with JavaScript, Html and Css using https://rickandmortyapi.com/",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sassToCss": "sass --watch assets/style/sass/style.scss assets/style/css/style.css"
   },
   "repository": {
     "type": "git",
