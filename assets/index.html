@@ -10,7 +10,14 @@
 </head>
 <body>
     <header>
-        <img src="images/logo.png" >
+        <a href="#"><img src="images/logo.png" ></a>
+        <div class="field">
+            <input id="name" type="text" placeholder="Search a character">
+            <div class="btn-search">
+              <img class="btn-search" src="images/loupe.png" fill="white">
+            </div>
+        </div>
+
     </header>
     <div class="container">
         <div class="page-controllers">
@@ -206,10 +213,13 @@
             <button class="next">Next</button>
         </div>
     </div>
-<footer></footer>
+<footer>
+    <img src="images/footer-image.png">
+    <a href="https://rickandmortyapi.com/" target="_blank">This site was made using Rick and Morty Api.</a>
+</footer>
 
 
     <script src="js/lib/axios.min.js"></script>
-    <script type="module" src="js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

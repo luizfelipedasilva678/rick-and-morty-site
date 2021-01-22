@@ -15,6 +15,13 @@
                 loadData(dataInfo.prev);
             }
         }
+
+        if(e.target.className === 'btn-search') {
+            let name = document.querySelector('#name').value;
+            console.log(name);
+
+            loadData(`https://rickandmortyapi.com/api/character/?name=${name}`)
+        }
     });
     
     async function loadData(url = 'https://rickandmortyapi.com/api/character/?page=1') {

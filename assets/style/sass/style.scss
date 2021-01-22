@@ -17,10 +17,11 @@ body {
 
 header {
     width: 100%;
-    background-color: $blue;
+    background-color: $cinza;
     border-bottom: 2px solid $white;
-    
-    @include flex(row, center, center);
+    box-shadow: 1px 9px 12px 8px rgba(0,0,0,0.75);
+
+    @include flex(row, center, space-around);
 
     img {
         height: 135px;
@@ -30,16 +31,60 @@ header {
         img {
             width: 100%;
         }
+
+        @include flex(column);
+    }
+
+    .field {
+        @include flex();
+
+        input { 
+            color: $preto;
+        }
+
+        @media (max-width: 640px) {
+            @include flex(row, center, center);
+        }
+        
+        .btn-search {
+            cursor: pointer;
+            margin-left: 10px;
+
+            .svg-image {
+                fill: $white;
+            }
+            
+            img {
+                height: 36px;
+
+                @media (max-width: 640px) {
+                    width: 36px;
+                }
+            }
+        }
     }
 }
 
 footer {
     width: 100%;
-    height: 200px;
-    background-color: $blue;
+    background-color: $cinza;
     border-top: 2px solid $white;
 
+    @include flex(column, center, center);
+
     margin-top: 50px;
+
+    a {
+        text-decoration: none;
+    }
+
+    img {
+        height: 385px;
+
+        @media (max-width: 640px) {
+            height: 295px;
+        }
+    }
 }
 
 .container { 
@@ -93,10 +138,11 @@ footer {
         }
 
         button {
+            cursor: pointer;
             border: none;
             width: 200px;
             border-radius: 5px;
-            background-color:  $blue;
+            background-color:  $cinza;
             border: solid $white 1px;
             
             @media (max-width: 640px) {
