@@ -1,8 +1,10 @@
 * {
+  font-family: "Oswald", sans-serif;
+  box-sizing: border-box;
+  color: #ffff;
   font-size: 22px;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
@@ -11,12 +13,39 @@ body {
   align-items: center;
   justify-content: center;
   flex-wrap: nowrap;
+  background-color: #d6d6d6;
+}
+
+header {
+  width: 100%;
+  background-color: #040c27;
+  border-bottom: 2px solid #ffff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+header img {
+  height: 135px;
+}
+@media (max-width: 640px) {
+  header img {
+    width: 100%;
+  }
+}
+
+footer {
+  width: 100%;
+  height: 200px;
+  background-color: #040c27;
+  border-top: 2px solid #ffff;
+  margin-top: 50px;
 }
 
 .container {
   max-width: 1600px;
   width: 100%;
-  background-color: #040c27;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,12 +53,65 @@ body {
   flex-wrap: nowrap;
 }
 .container .gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  grid-gap: 20px;
+  padding: 50px;
+}
+@media (max-width: 640px) {
+  .container .gallery {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+  }
+}
+.container .gallery .character-card {
+  background-color: #3c3e44;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.container .gallery .character-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+.container .gallery .character-card .infos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.container .page-controllers {
+  margin-top: 40px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+@media (max-width: 640px) {
+  .container .page-controllers {
+    padding: 15px;
+  }
+}
+.container .page-controllers button {
+  border: none;
+  width: 200px;
+  border-radius: 5px;
+  background-color: #040c27;
+  border: solid #ffff 1px;
+}
+@media (max-width: 640px) {
+  .container .page-controllers button {
+    width: 135px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
